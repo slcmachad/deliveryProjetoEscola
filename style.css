@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@300;400;500;600;700;800&display=swap');
+/* main css */
+
+:root {
+    /* Fontes */
+    --font-principal: 'Raleway', sans-serif;
+    --font-secundaria: 'Calistoga', cursive;
+
+    /* Cores */
+    --white: #fff;
+    --black: #000;
+    --header-bg: linear-gradient(120deg, #35013a 0%, #2d749e 50%, #c000b0 100%);
+    --body-bg: linear-gradient(300deg, #35013a 0%, #2d749e 50%, #c000b0 100%);
+    --dias-bg: #008364;
+    --azul-claro: #C8DEEF;
+    --cinza-letras: #444444;
+
+
+    /* teste */
+
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--white);
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: var(--body-bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background: var(--header-bg);
+    width: 100%;
+    position: relative;
+}
+
+
+footer {
+    background: var(--header-bg);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* tamanho 1440px+ */
+
+/* cabeçalho conteudo */
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 4rem;
+    font-family: var(--font-principal);
+
+}
+
+.logo .img__logo{
+    width: 240px;
+    height: 64px;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu.active {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu__item a {
+    font-size: 20px;
+    position: relative;
+    padding: 0.6rem 0.2rem;
+}
+
+.menu__item a.selecionado {
+    color: var(--header-bg);
+    border-radius: 10px;
+    background: var(--black);
+    padding: 0.45rem;
+}
+
+.menu__item a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    background-color: var(--white);
+    transition: all 0.5s ease;
+} 
+
+.menu__item a:hover::before {
+    width: 100%;
+}
+
+.menu__item a.selecionado:hover::before {
+    width: 0;
+}
+
+#hamburguer {
+    display: none;
+}
+
+
+
+/* Conteudo pricipal */
+
+
+/* Banner */
+
+
+.banner__principal {
+    background-image: url(./assets/pictures/Banner-Homepage-370px.png);
+}
+
+.experiencia__banner {
+    background-image: url(./assets/pictures/Banner-experiencia.png);
+}
+
+.informacoes__banner {
+    background-image: url(./assets/pictures/Informacoes-banner.png);
+}
+
+.banner {
+    font-family: var(--font-secundaria);
+    font-size: 64px;
+    font-weight: 400;
+    height: 400px;
+    width: 100%;
+    line-height: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Informações primeira pagina*/
+
+.informacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 84%;
+    height: 510px;
+    margin: auto;
+}
+
+.informacao__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.6rem;
+}
+
+.imagem__banda {
+    background: url(./assets/pictures/imagem-principal.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    border-radius: 0.8rem;
+    width: 50%;
+    height: 380px;
+}
+
+.informacao__descricao {
+    font-family: var(--font-principal);
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.informacao__descricao h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.informacao__descricao p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.informacao__ingresso{
+    width: 256px;
+    padding: 1.1rem;
+    font-size: 20px;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--header-bg);
+    border-radius: 1rem;
+    box-shadow: 4px 4px 0px rgb(0 0 0 / 40%);
+    transition: 0.5s;
+}
+
+.informacao__ingresso:hover {
+    background: var(--body-bg);
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.participantes {
+    width: 100%;
+    text-align: center;
+}
+
+.line__up {
+    font-size: 58px;
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+}
+
+.participantes__dia {
+    margin-top: 3rem;
+}
+
+.dia {
+    font-size: 48px;
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    background: var(--dias-bg);
+    width: fit-content;
+    margin: 0 auto 2rem;
+    position: relative;
+    padding: 1rem;
+}
+
+.dia::before {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 1px;
+    background: var(--dias-bg);
+    left: -90%;
+    top: 50%;
+}
+
+.dia::after {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 1px;
+    background: var(--dias-bg);
+    right: -90%;
+    top: 50%;
+}
+
+.participantes__nome {
+    width: 100%;
+    margin-top: 1rem;
+    font-family: var(--font-principal);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.participantes__nome h2 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.participantes__nome__linha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    row-gap: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.linha__1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.linha__2 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.linha__3 {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.imagem__rodape {
+    background: url(./assets/pictures/Rodape-banner.png);
+    width: 100%;
+    height: 337px;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 2rem 0 0;
+    mix-blend-mode: multiply;
+    transition: 0.3s;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;;
+    width: 100%;
+    height: 290px;
+}
+
+.logo_rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.image_logo_rodape .img__logo {
+    width: 307px;
+    padding-left: 1rem;
+}
+
+.logo_rodape ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 20px;
+    font-family: var(--font-principal);
+}
+
+.logo_rodape ul li {
+    font-size: 32px;
+}
+
+.dev__rodape {
+    font-family: var(--font-principal);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+/* Player de Musica */
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    padding: 0.3rem;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    background-color: var(--body-bg);
+    opacity: 0.8;
+    position: fixed;
+    bottom: 0;
+    flex-direction: row;
+}
+
+.teste {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.controles button {
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.controles i {
+font-size: 30px;
+padding: 5px;
+border-radius: 50%;
+background-color: var(--azul-claro);
+transition: all 0.2s;
+color: #222;
+
+}
+
+.controles i:hover {
+background-color: white;
+}
+
+
+
+/* telas menores que 1144px */
+
+@media screen and (max-width: 1144px) {
+    .dia::before {
+        width: 200px;
+        left: -50%;
+    }
+
+    .dia::after {
+        width: 200px;
+        right: -50%;
+    }
+
+}
+
+
+/* telas menores que 968px */
+
+
+@media screen and (max-width: 968px) {
+    .navbar {
+        padding: 0.6rem 2rem;
+    }
+    
+    .menu {
+        gap: 0.5rem;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .logo .img__logo {
+        width: 225px;
+    }
+
+    .informacao {
+        width: 100%;
+        height: 100%;
+    }
+
+    .informacao__card {
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem 0;
+        gap: 2rem;
+    }
+    
+    .imagem__banda {
+        width: 75%;
+    }
+    
+    .informacao__descricao {
+        width: 75%;
+        gap: 2rem;
+    }
+    
+    .dia::before {
+        width: 80px;
+        left: -24%;
+    }
+
+    .dia::after {
+        width: 80px;
+        right: -24%;
+    }
+
+    .participantes__nome {
+        padding: 0 2rem;
+    }
+    
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem 0;
+        justify-content: flex-start;
+    }
+
+    .logo_rodape {
+        gap: 0;
+    }
+
+    .player {
+        right: 0;
+    }
+    
+
+}
+
+
+
+/* telas menores que 840px */
+
+
+@media screen and (max-width: 840px) {
+    .navbar {
+        flex-direction: column;
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+    .menu {
+        gap: 1rem;
+    }
+    
+    .imagem__rodape {
+        background: url(./assets/pictures/rodape765px.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    
+    .logo_rodape ul li {
+        font-size: 24px;
+    }
+    
+    .dev__rodape {
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+/* telas menores que 690px */
+
+@media screen and (max-width: 690px) {
+    .dia::before, .dia::after {
+        width: 0;
+    }
+
+}
+
+
+
+
+/* telas menores que 580px */
+
+@media screen and (max-width: 580px) {
+    .navbar {
+        padding: 1.5rem 0;
+    }
+    
+    .menu {
+        display: none;
+    }
+    #hamburguer {
+        display: block;
+        width: 30px;   
+        height: 20px;
+    }
+    .logo {
+        width: 100%;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60%;
+        right: 0;
+        gap: 1rem;
+    
+        background: var(--header-bg);
+    
+        width: 195px;
+        height: 230px;
+        padding: 1rem .5rem 0;
+        text-align: center;
+    
+    }
+    
+    .menu.active .menu__item {
+        position: relative;
+        padding: 0.5rem 0;
+    }
+    
+    .menu.active .menu__item:not(:last-child) a::after{
+        content: "";
+        width: 80%;
+        height: 1px;
+        background: var(--white);
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+    }
+        
+    .menu.active .menu__item a:hover::before {
+        width: 0%;
+    }
+
+    .menu__item a.selecionado {
+        padding: 0.6rem;
+    }
+
+    .banner {
+        font-size: 40px;
+        padding: 0 0.7rem;
+    }
+
+
+    .imagem__banda {
+        width: 90%;
+    }
+
+    .informacao__descricao {
+        width: 95%;
+    }
+
+    
+    .informacao__ingresso {
+        width: 312px;
+        justify-content: space-evenly;        
+    }
+
+    .line__up {
+        font-size: 42px;
+    }
+
+    .dia {
+        font-size: 32px;
+    }
+
+    .participantes__nome__linha {
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .imagem__rodape {
+        background: url(./assets/pictures/rodape-370px.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    .player {
+        width: 100%;
+    }
+}
+
+
