@@ -8,12 +8,12 @@
 
     /* Cores */
     --white: #fff;
-    --black: #000;
-    --header-bg: linear-gradient(90deg, #050505 0%, #3c085a 40%, #c000b0 80%, #0c0c0c 100%);
-    --body-bg: linear-gradient(270deg, #0a0a0a 0%, #3c085a 40%, #c000b0 80%, #0e0d0d 100%);
+    --black: #f98a38;
+    --header-bg: #b329acd7;
+    --body-bg: rgb(247 118 84 / 70%);
     --dias-bg: #008364;
     --azul-claro: #C8DEEF;
-    --cinza-letras: #444444;
+    --cinza-letras: #746363;
 
 
     /* teste */
@@ -183,7 +183,7 @@ main .banner h1{
 }
 
 .imagem__banda {
-    background: url(./assets/pictures/imagem-principal.png);
+    background: url(./assets/pictures/drinks/varios-drinks.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

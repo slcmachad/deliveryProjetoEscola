@@ -24,14 +24,15 @@
 }
 
 .img1 {
-    background-image: url(../assets/pictures/experiencia01.jpg);
+    background-image: url(../assets/pictures/drinks/drink-e-comida.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.8;
 }
 
 .img2 {
-    background-image: url(../assets/pictures/sustentabilidade01.png);
+    background-image: url(../assets/pictures/drinks/comidas.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,6 +44,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.img4 {
+    background-image: url(../assets/pictures/drinks/comidas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    order: 2;
 }
 
 .experiencia__cards__info {
