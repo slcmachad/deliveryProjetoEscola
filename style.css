@@ -9,8 +9,8 @@
     /* Cores */
     --white: #fff;
     --black: #000;
-    --header-bg: linear-gradient(120deg, #35013a 0%, #2d749e 50%, #c000b0 100%);
-    --body-bg: linear-gradient(300deg, #35013a 0%, #2d749e 50%, #c000b0 100%);
+    --header-bg: linear-gradient(90deg, #050505 0%, #3c085a 40%, #c000b0 80%, #0c0c0c 100%);
+    --body-bg: linear-gradient(270deg, #0a0a0a 0%, #3c085a 40%, #c000b0 80%, #0e0d0d 100%);
     --dias-bg: #008364;
     --azul-claro: #C8DEEF;
     --cinza-letras: #444444;
@@ -127,6 +127,7 @@ footer {
 
 .banner__principal {
     background-image: url(./assets/pictures/Banner-Homepage-370px.png);
+
 }
 
 .experiencia__banner {
@@ -153,6 +154,12 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+}
+
+main .banner h1{
+    color: #fffb38;
+    text-shadow: 0 0 0px #f5faf3, 0 0 4px #aff72a, 0 0 13px #e2b214;
 }
 
 
