@@ -40,15 +40,15 @@
 }
 
 .img3 {
-    background-image: url(../assets/pictures/atracoes01.png);
-    background-position: center;
+    background-image: url(../assets/pictures/drinks/dois-drinks.jpg);
+    background-position: unset;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .img4 {
-    background-image: url(../assets/pictures/drinks/comidas.jpg);
-    background-position: center;
+    background-image: url(../assets/pictures/drinks/foto-04.jpg);
+    background-position: unset;
     background-repeat: no-repeat;
     background-size: cover;
     order: 2;
