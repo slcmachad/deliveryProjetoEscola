@@ -9,9 +9,9 @@
     /* Cores */
     --white: #fff;
     --black: #f98a38;
-    --header-bg: #b329acd7;
+    --header-bg: #bb3560;
     --body-bg: rgb(247 118 84 / 70%);
-    --dias-bg: #008364;
+    --dias-bg: #bb3560;
     --azul-claro: #C8DEEF;
     --cinza-letras: #746363;
 
@@ -126,16 +126,16 @@ footer {
 
 
 .banner__principal {
-    background-image: url(./assets/pictures/Banner-Homepage-370px.png);
+    background-image: url(./assets/pictures/drinks/plano-de-fundo2.jpg);
 
 }
 
 .experiencia__banner {
-    background-image: url(./assets/pictures/Banner-experiencia.png);
+    background-image: url(../assets/pictures/drinks/plano-de-fundo2.jpg);
 }
 
 .informacoes__banner {
-    background-image: url(./assets/pictures/Informacoes-banner.png);
+    background-image: url(../assets/pictures/drinks/plano-de-fundo2.jpg);
 }
 
 .banner {
@@ -325,7 +325,7 @@ main .banner h1{
 }
 
 .imagem__rodape {
-    background: url(./assets/pictures/Rodape-banner.png);
+    background-image: url(./assets/pictures/drinks/plano-de-fundo.jpg);
     width: 100%;
     height: 337px;
     background-position: center;
@@ -529,7 +529,7 @@ background-color: white;
     }
     
     .imagem__rodape {
-        background: url(./assets/pictures/rodape765px.png);
+        background-image: url(./assets/pictures/drinks/plano-de-fundo.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;
@@ -587,7 +587,7 @@ background-color: white;
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 60%;
+        top: 100%;
         right: 0;
         gap: 1rem;
     
@@ -657,7 +657,7 @@ background-color: white;
     }
 
     .imagem__rodape {
-        background: url(./assets/pictures/rodape-370px.png);
+        background-image: url(./assets/pictures/drinks/plano-de-fundo.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;

@@ -95,7 +95,7 @@
 
 @media screen and (max-width: 840px) {   
     .experiencia__banner {
-        background-image: url(../assets/pictures/Banner-experiencia-780px.png);
+        background-image: url(../assets/pictures/drinks/plano-de-fundo2.jpg);
     }
 }
 
@@ -112,7 +112,7 @@
     }
 
     .experiencia__banner {
-        background-image: url(../assets/pictures/Banner-experiencia-370px.png);
+        background-image: url(../assets/pictures/drinks/plano-de-fundo2.jpg);
     }
 
     .experiencia__cards {
@@ -120,7 +120,7 @@
     }
 
     .img1 {
-        background-image: url(../assets/pictures/drinks/drink-e-comida.jpg);        
+        background-image: url(../assets/pictures/drinks/Panna-Cotta-scaled.jpg);        
     }
 
     .img2 {
@@ -128,11 +128,12 @@
     }
 
     .img3 {
-        background-image: url(../assets/pictures/atracoes02.png);
+        background-image: url(../assets/pictures/drinks/dois-drinks.jpg);
     }
 
     .img4 {
-        background-image: url(../assets/pictures/drinks/comidas.jpg);
+        background-image: url(../assets/pictures/drinks/foto-04.jpg);
+        background-position: unset;
     }
 
     .experiencia .sustentabilidade {
