@@ -99,14 +99,6 @@
     
 }
 
-@media screen and (max-width: 840px) {
-
-}
-
-@media screen and (max-width: 690px) {
-
-}
-
 @media screen and (max-width: 580px) {
     .informacoes__perguntas h2 {
         font-size: 40px;
